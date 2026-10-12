@@ -105,6 +105,7 @@ pipeline {
             }
             steps {
                 sh '''
+                    echo "test change"
                     npx playwright test --reporter=html
                 '''
             }
